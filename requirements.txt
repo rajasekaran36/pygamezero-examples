@@ -1,5 +1,2 @@
-pylint
-python3
-doctest
 pygame
 pgzero
