@@ -5,6 +5,8 @@ WIDTH=500
 HEIGHT=500
 
 circle_color = 'white'
+circle_posx = 250
+circle_posy = 250
 
 #function that draws
 def draw():
@@ -13,15 +15,16 @@ def draw():
     screen.fill('black')
 
     #screen.draw.circle((posx,posy),radius,color)
-    screen.draw.circle((250,250),50,circle_color)
+    screen.draw.circle((circle_posx,circle_posy),50,circle_color)
 
 #function triggered when mouse cliked
-def on_mouse_down(button):
-    global circle_color
+#pos tupple (x,y) clicked position
+def on_mouse_down(pos,button):
+    global circle_posx,circle_posy
     print(button)
-    if(button == mouse.LEFT):
-        circle_color = 'red'
-    elif(button == mouse.RIGHT):
-        circle_color = 'green'
-        
+    if(button == mouse.WHEEL_UP):
+        circle_posy = circle_posy - 2
+    elif(button == mouse.WHEEL_DOWN):
+        circle_posy = circle_posy + 2
+
 pgzrun.go() # Do not edit this line
