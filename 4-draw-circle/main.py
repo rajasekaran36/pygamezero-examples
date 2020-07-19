@@ -9,7 +9,6 @@ def draw():
     #screen is your window
     #screen.fill(colorname)
     screen.fill('black')
-
     #screen.draw.circle((posx,posy),radius,color)
     screen.draw.circle((250,250),50,'white')
         

@@ -12,7 +12,7 @@ def draw():
 
     #screen.draw.line((startx,starty),(endx,endy),line_color)
     screen.draw.line((50,50),(100,100),'white')
-
+    
     #screen.draw.line((startx,starty),(endx,endy),(red,grean,blue))
     screen.draw.line((150,150),(250,250),(255,0,0))
 pgzrun.go() # Do not edit this line
